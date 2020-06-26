@@ -1,0 +1,36 @@
+{
+    "name": "dazzlesoftware/filter",
+    "type": "library",
+    "description": "Dazzle Filter Package",
+    "keywords": ["dazzle", "framework", "filter"],
+    "homepage": "https://github.com/dazzle-framework/filter",
+    "license": "GPL-3.0-or-later",
+    "require": {
+       "php": "^7.3.0",
+        "dazzlesoftware/string": "^1.0"
+    },
+    "require-dev": {
+        "dazzlesoftware/dazzle-coding-standard": "^1.0",
+        "dazzlesoftware/language": "^1.0",
+        "phpunit/phpunit": "^9.0"
+    },
+    "suggest": {
+        "dazzlesoftware/language": "Required only if you want to use `OutputFilter::stringURLSafe`."
+    },
+    "autoload": {
+        "psr-4": {
+            "Dazzle\\Filter\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Dazzle\\Filter\\UnitTests\\": "tests/"
+        }
+    },
+    "minimum-stability": "dev",
+    "extra": {
+        "branch-alias": {
+	        "dev-2.0-dev": "2.0-dev"
+        }
+    }
+}
